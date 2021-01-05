@@ -1,0 +1,61 @@
+.errorMsg {
+  color: $clr-warn;
+  padding-left: $m-space;
+  margin-bottom: $s-space;
+}
+
+.form-control {
+  align-items: center;
+  background: $clr-bgdarker;
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+  padding: $s-space;
+
+  .form-input-name {
+    background: $clr-bgdarknt;
+    height: 45px;
+
+    border: none;
+    border-bottom: 0.3rem solid darken($clr-main, 10%);
+    outline: none;
+    color: $clr-main;
+    font-weight: bold;
+    margin-top: $m-space;
+    padding-left: $m-space;
+    margin-bottom: $m-space;
+    width: 100%;
+
+    &::placeholder {
+      color: $clr-main;
+      font-weight: normal;
+    }
+  }
+
+  button {
+    width: 33%;
+
+    &:hover {
+      color: $clr-mainlight;
+      @include shadowStyle;
+      // background: $clr-mainlight;
+      // width: 101%;
+      transition: $animation-speed;
+    }
+  }
+}
+
+@media (min-width: 45rem) {
+  //from 450px, apply this style
+
+  .form-control {
+    flex-direction: row;
+  }
+
+  .form-input-name {
+    flex-grow: 1;
+    margin-right: $s-space;
+    padding-left: $m-space;
+    align-items: center;
+  }
+}

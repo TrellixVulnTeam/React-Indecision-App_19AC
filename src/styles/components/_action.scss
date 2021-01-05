@@ -1,0 +1,31 @@
+.action {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-bottom: $m-space;
+
+  button {
+    @include bigButton;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &:hover {
+      color: $clr-mainlight;
+      @include shadowStyle;
+      // background: $clr-mainlight;
+      // width: 101%;
+      transition: $animation-speed;
+    }
+  }
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .action {
+    button {
+      margin-bottom: -$s-space;
+    }
+  }
+}

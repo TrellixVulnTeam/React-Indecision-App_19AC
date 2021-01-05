@@ -1,0 +1,11 @@
+.container {
+  // transition: $animation-speed ease-in-out;
+
+  max-width: 60rem;
+  min-width: 50rem;
+
+  margin: 0 auto;
+  // padding: $m-space;
+  border-radius: $rad-small;
+  max-height: 120rem;
+}

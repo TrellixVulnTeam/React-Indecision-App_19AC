@@ -1,0 +1,30 @@
+.option {
+  align-items: center;
+  border-bottom: 3px $clr-bgdarknt solid;
+  color: $clr-main;
+  display: flex;
+  font-size: $fnt-largish;
+  height: 100%;
+  margin: $s-space $l-space;
+  justify-content: space-between;
+  padding: $xs-space $m-space;
+  text-transform: capitalize;
+  width: 100%;
+  word-break: break-all;
+
+  &:hover {
+    @include shadowStyle;
+    background: $clr-bgdarknt;
+    // width: 101%;
+    transition: $animation-speed;
+  }
+
+  // &.even {
+  //   background: $clr-bgdarknt;
+  // }
+}
+
+.start-message {
+  color: $clr-main;
+  padding-top: $m-space;
+}

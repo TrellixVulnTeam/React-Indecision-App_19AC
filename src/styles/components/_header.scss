@@ -1,0 +1,35 @@
+.header {
+  position: relative;
+  background: $clr-bgdark;
+  // padding-left: $m-space;
+  padding-bottom: $l-space;
+  margin-bottom: $xl-space;
+  align-self: center;
+  width: 100vw;
+
+  padding-right: 0;
+  margin-right: 0;
+
+  .header-title {
+    padding-top: $xl-space;
+    color: $clr-main;
+    font-size: $fnt-xlarge;
+  }
+
+  .header-subtitle {
+    font-size: $fnt-medium;
+    // font-size: 100%;
+    color: $clr-bglight;
+
+    min-width: 5rem;
+  }
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .header {
+    width: 100%;
+    margin-right: 0;
+
+    margin-bottom: $m-space;
+  }
+}

@@ -1,0 +1,16 @@
+.app-body {
+  background-color: $clr-bgdark;
+  @include shadowStyle;
+  margin-bottom: $xl-space;
+}
+
+.remove-all-container {
+  width: 100%;
+  background: $clr-bgdarker;
+  position: relative;
+  color: $clr-main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: $s-space;
+}

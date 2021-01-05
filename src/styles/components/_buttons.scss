@@ -1,0 +1,23 @@
+//big button
+
+//small butttons
+.btn-small {
+  background: $clr-main;
+  border: none;
+  color: $clr-black;
+  padding: $s-space;
+  border-bottom: 0.5rem solid darken($clr-main, 20%);
+  font-weight: 600;
+}
+
+//modified buttons - used two '--' MED naming convention
+
+.btn-small--link {
+  background: none;
+  color: $clr-main;
+  border: none;
+
+  &:hover {
+    color: $clr-mainlight;
+  }
+}

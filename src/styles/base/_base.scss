@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%;
+
+  //to turn the font to a 10 base like pixels - use the above ( 16px * 0.625rem = 10base)
+}
+
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  //using the dev tools - u can see the boshy shrinks bubt content not with it.
+  background: $clr-bgdarknt;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $fnt-medium;
+
+  //using display flex seemed to fix my issue
+  button {
+    cursor: pointer;
+
+    &:disabled {
+      cursor: default;
+    }
+  }
+}
+
+.app.container {
+  display: flex;
+  place-items: center;
+  justify-content: space-around;
+}
+
+@mixin shadowStyle {
+  box-shadow: 0px 2px 10px rgba(65, 64, 64, 0.542);
+}

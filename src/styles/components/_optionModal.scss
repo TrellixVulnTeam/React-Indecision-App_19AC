@@ -1,0 +1,48 @@
+//name taken from browser dev tools when modal is closed
+
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  transition: opacity 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal-content-custom-name {
+  background: $clr-bgdarknt;
+  color: $clr-main;
+  max-width: 30rem;
+  outline: none;
+  padding: $l-space;
+  text-align: center;
+
+  h3 {
+    font-size: $fnt-large;
+    margin-bottom: $m-space;
+    color: $clr-bglight;
+  }
+
+  p {
+    font-size: $fnt-largish;
+    color: $clr-bglight;
+    text-transform: uppercase;
+    word-break: break-all;
+  }
+
+  button {
+    @include bigButton;
+    width: 50%;
+    margin-top: $l-space;
+  }
+}
